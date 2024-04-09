@@ -3,9 +3,15 @@
   margin: 0;
   padding: 0;
 }
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+}
 body {
   align-items: center;
-  background-color: hsl(212, 45%, 89%);
+  background-color: var(--Light-gray);
   display: flex;
   flex-direction: column;
   font-family: "Outfit", Helvetica, sans-serif;
@@ -13,7 +19,7 @@ body {
   justify-content: center;
 }
 .card {
-  background-color: hsl(0, 0%, 100%);
+  background-color: var(--White);
   border-radius: 1rem;
   max-width: 320px;
   padding: 15px;
@@ -26,13 +32,13 @@ body {
   max-width: 100%;
 }
 .card h1 {
-  color: hsl(218, 44%, 22%);
+  color: var(--Dark-blue);
   font-size: 22px;
   font-weight: 700;
   padding: 18px 0px 5px;
 }
 .card p {
-  color: hsl(220, 15%, 55%);
+  color: var(--Grayish-blue);
   font-size: 15px;
   font-weight: 400;
   margin-bottom: 20px;
